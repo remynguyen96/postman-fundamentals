@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "8197c6dd-f945-4af4-91eb-195c80d0cd73",
+		"name": "Mock Household",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Owned Books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-mock-response-code",
+						"value": "200",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/households/1/ownedBooks",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"households",
+						"1",
+						"ownedBooks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/households/1/ownedBooks",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"households",
+								"1",
+								"ownedBooks"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\n\t{\n\t\t\"id\": 2,\n\t\t\"title\": \"Lectures To My Students\",\n\t\t\"author\": \"Charles Spugeon\"\n\t},\n\t{\n\t\t\"id\": 3,\n\t\t\"title\": \"Van Til's Apologetic\",\n\t\t\"author\": \"Greg Bahnsen\"\n\t}\n]"
+				},
+				{
+					"name": "Third Household",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/households/3/ownedBooks",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"households",
+								"3",
+								"ownedBooks"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"title\": \"The Screwtape Letters\",\n        \"author\": \"C.S Lewis\"\n    }\n]"
+				},
+				{
+					"name": "Second Household",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/households/2/ownedBooks",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"households",
+								"2",
+								"ownedBooks"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\n\t{\n\t\t\"id\": 1,\n\t\t\"title\": \"Don't Waste Your Time\",\n\t\t\"author\": \"John Piper\"\n\t}\n]"
+				},
+				{
+					"name": "Server Error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/households/1/ownedBooks",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"households",
+								"1",
+								"ownedBooks"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 07 Feb 2021 08:41:31 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=f6d4f6c6a64a3fc3"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=fa203a3b265d0255"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "117"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1612687305"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"51-azpvM4FqKS0ZFFhgI3VcmpEjefM\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "Get Households",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/households",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"households"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Households",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/households",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"households"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\n\t{\n\t\t\"id\": 1,\n\t\t\"name\": \"Nate's Household\",\n\t\t\"createdAt\": \"2021-02-07T08:21:17.998Z\",\n\t\t\"updatedAt\": \"2021-02-07T08:21:28.998Z\"\n\t},\n\t{\n\t\t\"id\": 2,\n\t\t\"name\": \"John's Household\",\n\t\t\"createdAt\": \"2021-02-07T08:21:18.998Z\",\n\t\t\"updatedAt\": \"2021-02-07T08:21:29.998Z\"\n\t},\n\t{\n\t\t\"id\": 3,\n\t\t\"name\": \"Chris's Household\",\n\t\t\"createdAt\": \"2021-02-07T08:21:19.998Z\",\n\t\t\"updatedAt\": \"2021-02-07T08:21:30.998Z\"\n\t}\n]"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
